@@ -1,0 +1,54 @@
+{
+    "$comment": [
+        "Scoop manifest for stxctl, rendered per release by cli/stxctl/packaging/render.sh and",
+        "pushed to the storagetax/scoop-bucket repository.",
+        "",
+        "SCOOP IS THE WINDOWS PACKAGE MANAGER THIS SHIPS WITH FIRST, and the reason is that it is",
+        "the only one of the three that can ship at all without somebody else's approval. A Scoop",
+        "bucket is a git repository of JSON files: publishing is a push, updating is a push, and a",
+        "customer installs with `scoop bucket add storagetax https://github.com/storagetax/scoop-bucket`",
+        "then `scoop install stxctl`. No account, no review queue, no publisher identity.",
+        "",
+        "winget is the one a Windows engineer reaches for first and is a named blocker: every",
+        "version is a pull request into microsoft/winget-pkgs that a human reviews, and the",
+        "manifest requires a stable publisher identity. It is worth doing and it cannot be done",
+        "from this branch.",
+        "",
+        "Chocolatey is a second account plus a moderation queue, and its audience overlaps winget",
+        "almost entirely. It is not planned unless a customer asks.",
+        "",
+        "hash IS THE CHECKSUM CHECK ON THIS PATH: Scoop verifies it after download and refuses to",
+        "install on a mismatch."
+    ],
+    "version": "0.0.1-rc1",
+    "description": "Connect a Kubernetes cluster to Storagetax",
+    "homepage": "https://storagetax.com",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/storagetax/stxctl/releases/download/v0.0.1-rc1/stxctl_v0.0.1-rc1_windows_amd64.zip",
+            "hash": "6085242511f1ab49be8679ffa8c69abf0a289c59235894c42ea2a07633f80cf2"
+        },
+        "arm64": {
+            "url": "https://github.com/storagetax/stxctl/releases/download/v0.0.1-rc1/stxctl_v0.0.1-rc1_windows_arm64.zip",
+            "hash": "27157670585e792796b061408a1701fde9f6ab6267a159e51f0b7858f3f544ac"
+        }
+    },
+    "bin": "stxctl.exe",
+    "checkver": {
+        "github": "https://github.com/storagetax/storagetax-k8s-optimizer"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/storagetax/storagetax-k8s-optimizer/releases/download/v$version/stxctl_v$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/storagetax/storagetax-k8s-optimizer/releases/download/v$version/stxctl_v$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}
