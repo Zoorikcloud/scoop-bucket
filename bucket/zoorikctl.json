@@ -20,18 +20,18 @@
         "hash IS THE CHECKSUM CHECK ON THIS PATH: Scoop verifies it after download and refuses to",
         "install on a mismatch."
     ],
-    "version": "0.1.0",
-    "description": "Connect a Kubernetes cluster to Storagetax",
+    "version": "0.1.1",
+    "description": "Connect a Kubernetes cluster to Zoorik",
     "homepage": "https://zoorik.com",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/storagetax/zoorikctl/releases/download/v0.1.0/zoorikctl_v0.1.0_windows_amd64.zip",
-            "hash": "e84a3300e8582b61f553d92abeda52f1376e38f8ef84ebff8fe5a69d640535f9"
+            "url": "https://github.com/storagetax/zoorikctl/releases/download/v0.1.1/zoorikctl_v0.1.1_windows_amd64.zip",
+            "hash": "82539ef89d93488777057005a86141b462aac97278938a34131625e8aec11df2"
         },
         "arm64": {
-            "url": "https://github.com/storagetax/zoorikctl/releases/download/v0.1.0/zoorikctl_v0.1.0_windows_arm64.zip",
-            "hash": "bea3f80c8fadaed06971b1d3a25a138ec5dea3c48739ea60261bffb2fbe6cdcc"
+            "url": "https://github.com/storagetax/zoorikctl/releases/download/v0.1.1/zoorikctl_v0.1.1_windows_arm64.zip",
+            "hash": "85b380e9c1b503d34a453c10adee6c1572ee8906b9f93f70d6f25c1d812264ff"
         }
     },
     "bin": "zoorikctl.exe",
