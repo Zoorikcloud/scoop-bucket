@@ -1,13 +1,13 @@
-# storagetax/scoop-bucket
+# Zoorikcloud/scoop-bucket
 
-The Scoop bucket for `stxctl`.
+The Scoop bucket for `zoorikctl`.
 
 ```powershell
-scoop bucket add storagetax https://github.com/storagetax/scoop-bucket
-scoop install stxctl
+scoop bucket add zoorikcloud https://github.com/Zoorikcloud/scoop-bucket
+scoop install zoorikctl
 ```
 
-`bucket/stxctl.json` is written by the release workflow in the private monorepo. Do not hand-edit it —
+`bucket/zoorikctl.json` is written by the release workflow in `Zoorikcloud/k8spilot`. Do not hand-edit it —
 its `hash` values come from the release's signed `checksums.txt`.
 
 Scoop is the Windows path because a bucket needs nobody's approval: publishing is a push, with no
