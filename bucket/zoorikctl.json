@@ -20,18 +20,18 @@
         "hash IS THE CHECKSUM CHECK ON THIS PATH: Scoop verifies it after download and refuses to",
         "install on a mismatch."
     ],
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Connect a Kubernetes cluster to Zoorik",
     "homepage": "https://zoorik.com",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.2.0/zoorikctl_v0.2.0_windows_amd64.zip",
-            "hash": "eb8923af966bc764d6670991d2ea812ed3eabb648ccf57a289375b6c15d1ceb3"
+            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.3.0/zoorikctl_v0.3.0_windows_amd64.zip",
+            "hash": "5105a5c48fbc6aa39bc4bd077534688e2bfdec6c90b2d2bbd870443532a85db5"
         },
         "arm64": {
-            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.2.0/zoorikctl_v0.2.0_windows_arm64.zip",
-            "hash": "a650b76225f54f1f22750b107d66ec5bb41291c52e5269fc9c70b09d45c746d8"
+            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.3.0/zoorikctl_v0.3.0_windows_arm64.zip",
+            "hash": "278e516fdbb0b59832425191ee9eb076b6e252230a22757e26ed01a2da1e2890"
         }
     },
     "bin": "zoorikctl.exe",
