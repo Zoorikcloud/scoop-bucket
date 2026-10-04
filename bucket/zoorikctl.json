@@ -1,54 +1,17 @@
 {
-    "$comment": [
-        "Scoop manifest for zoorikctl, rendered per release by cli/zoorikctl/packaging/render.sh and",
-        "pushed to the Zoorikcloud/scoop-bucket repository.",
-        "",
-        "SCOOP IS THE WINDOWS PACKAGE MANAGER THIS SHIPS WITH FIRST, and the reason is that it is",
-        "the only one of the three that can ship at all without somebody else's approval. A Scoop",
-        "bucket is a git repository of JSON files: publishing is a push, updating is a push, and a",
-        "customer installs with `scoop bucket add zoorikcloud https://github.com/Zoorikcloud/scoop-bucket`",
-        "then `scoop install zoorikctl`. No account, no review queue, no publisher identity.",
-        "",
-        "winget is the one a Windows engineer reaches for first and is a named blocker: every",
-        "version is a pull request into microsoft/winget-pkgs that a human reviews, and the",
-        "manifest requires a stable publisher identity. It is worth doing and it cannot be done",
-        "from this branch.",
-        "",
-        "Chocolatey is a second account plus a moderation queue, and its audience overlaps winget",
-        "almost entirely. It is not planned unless a customer asks.",
-        "",
-        "hash IS THE CHECKSUM CHECK ON THIS PATH: Scoop verifies it after download and refuses to",
-        "install on a mismatch."
-    ],
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "Connect a Kubernetes cluster to Zoorik",
     "homepage": "https://zoorik.com",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.3.1/zoorikctl_v0.3.1_windows_amd64.zip",
-            "hash": "dae13ccb24e0313e809f597fbcf5f55d49bcd9e0072672fca002e91f78b103ae"
+            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.4.0/zoorikctl_v0.4.0_windows_amd64.zip",
+            "hash": "f86d2199124406608471ab88950c01bb87e64fd10d42a0d56627ae265df12a9b"
         },
         "arm64": {
-            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.3.1/zoorikctl_v0.3.1_windows_arm64.zip",
-            "hash": "170887e85a1ce892b731a71d1909efc32a9f1bc37511a60cc389456c27e0f8b9"
+            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.4.0/zoorikctl_v0.4.0_windows_arm64.zip",
+            "hash": "bf2b9b50db59e181b0d56a1fea5222df35b8735660553fe8e69feca8ddfe54ba"
         }
     },
-    "bin": "zoorikctl.exe",
-    "checkver": {
-        "github": "https://github.com/Zoorikcloud/zoorikctl"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v$version/zoorikctl_v$version_windows_amd64.zip"
-            },
-            "arm64": {
-                "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v$version/zoorikctl_v$version_windows_arm64.zip"
-            }
-        },
-        "hash": {
-            "url": "$baseurl/checksums.txt"
-        }
-    }
+    "bin": "zoorikctl.exe"
 }
