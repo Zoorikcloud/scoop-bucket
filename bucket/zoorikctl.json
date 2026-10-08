@@ -5,11 +5,11 @@
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.4.1/zoorikctl_v0.4.1_windows_amd64.zip",
+            "url": "https://github.com/getzoorik/zoorikctl/releases/download/v0.4.1/zoorikctl_v0.4.1_windows_amd64.zip",
             "hash": "aa58b94f23db4f7be71bc51f829a02bf4376888bee0ff71e166168dbab04b92d"
         },
         "arm64": {
-            "url": "https://github.com/Zoorikcloud/zoorikctl/releases/download/v0.4.1/zoorikctl_v0.4.1_windows_arm64.zip",
+            "url": "https://github.com/getzoorik/zoorikctl/releases/download/v0.4.1/zoorikctl_v0.4.1_windows_arm64.zip",
             "hash": "13b1baba6ff6aa5cd758e35ff967cdfc1a5b37f236a0160f91788c2b3bcf12e5"
         }
     },
